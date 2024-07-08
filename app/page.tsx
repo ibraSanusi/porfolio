@@ -3,6 +3,37 @@ import HeroSection from '@lib/components/home/HeroSection'
 import ExperienceSection from '@lib/components/home/ExperienceSection'
 import Link from 'next/link'
 import Arrow from '@lib/svg/Arrow'
+import Image from 'next/image'
+import { Rosarivo } from 'next/font/google'
+
+const font = Rosarivo({ subsets: ['latin'], weight: ['400'] })
+
+const projects = [
+  {
+    name: 'Recomiend.app',
+    description:
+      'Prueba estos ajustes y verifica si el problema persiste. Si encuentras errores específicos en la consola o más asistencia, proporciona detalles adicionales para una mejor ayuda.',
+    thumbnailUrl: '/images/recomiend-app-landing-vertical.png',
+    altText: 'Foto de la landing',
+    imgRotation: '-rotate-6',
+  },
+  {
+    name: 'Recomiend.app',
+    description:
+      'Prueba estos ajustes y verifica si el problema persiste. Si encuentras errores específicos en la consola o más asistencia, proporciona detalles adicionales para una mejor ayuda.',
+    thumbnailUrl: '/images/recomiend-app-upload-image.png',
+    altText: 'Foto de la landing',
+    imgRotation: 'rotate-6',
+  },
+  {
+    name: 'Recomiend.app',
+    description:
+      'Prueba estos ajustes y verifica si el problema persiste. Si encuentras errores específicos en la consola o más asistencia, proporciona detalles adicionales para una mejor ayuda.',
+    thumbnailUrl: '/images/recomiend-app-score.png',
+    altText: 'Foto de la landing',
+    imgRotation: '-rotate-3',
+  },
+]
 
 export default function Home() {
   return (
@@ -10,26 +41,37 @@ export default function Home() {
       <Header />
       <HeroSection />
 
-      <main className="m-auto mt-28 xl:max-w-[800px]">
-        <ExperienceSection />
-        {/* TODO: Mostrar 3 proyectos buenos.
+      <ExperienceSection className="m-auto mt-28 xl:max-w-[800px]" />
+
+      {/* TODO: Mostrar 3 proyectos buenos.
         Mostrar el restante en otra pagina */}
-        <section>
-          <div className="max-w-[499.19px] max-h-[211.19px] min-w-[499.19px] min-h-[211.19px] link-card relative p-8 flex flex-col gap-6 justify-between">
-            <h4 className="text-2xl font-bold">Hola mundo</h4>
-            <div className="flex gap-4">
-              <span>Nextjs</span>
-              <span>React</span>
+      <section className="w-full xl:min-h-[700px] flex flex-row gap-20 relative h-full">
+        {projects.map((project, index) => (
+          <article
+            key={index}
+            className="xl:min-h-[767.25px] flex flex-col justify-between h-full"
+          >
+            <div className="xl:w-fit relative">
+              <Image
+                className={`${project.imgRotation} rounded-2xl`}
+                width={450}
+                height={0}
+                src={project.thumbnailUrl}
+                alt={project.altText}
+              />
+              {/* Numero */}
+              <span
+                className={`${font.className} ${project.imgRotation} absolute text-[400px] left-16 -bottom-[247px] h-fit z-50 text-black font-extrabold`}
+              >
+                {index + 1}
+              </span>
             </div>
-            <Link
-              className="absolute bottom-0 right-0 w-24 h-12 bg-ternary rounded-[16px] flex items-center justify-center hover:bg-[#edffdf] text-white hover:text-black"
-              href={''}
-            >
-              <Arrow className="size-6" />
-            </Link>
-          </div>
-        </section>
-      </main>
+            <p className="xl:max-w-[500px] text-balance z-50">
+              {project.description}
+            </p>
+          </article>
+        ))}
+      </section>
 
       <p>Footer</p>
     </>
