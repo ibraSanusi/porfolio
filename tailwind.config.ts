@@ -17,12 +17,17 @@ const config: Config = {
       colors: {
         primary: '#A6FF00',
         secondary: '#F2E8CF',
+        ternary: '#859c58',
       },
       borderColor: {
         primary: '#A6FF00',
         secondary: '#F2E8CF',
+        ternary: '#859c58',
       },
       backgroundColor: {
+        principal: '#386641',
+        primary: '#A6FF00',
+        secondary: '#F2E8CF',
         ternary: '#859c58',
       },
     },
