@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import { nanumGothicCoding } from '@lib/fonts'
+import { roboto } from '@lib/fonts'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -14,9 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${nanumGothicCoding.className} xl:max-w-[1440px] w-full m-auto`}
-      >
+      <body className={`${roboto.className} xl:max-w-[1440px] w-full m-auto`}>
         {children}
       </body>
     </html>
