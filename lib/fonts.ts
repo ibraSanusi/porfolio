@@ -15,7 +15,7 @@ export const nanumGothicCoding = Nanum_Gothic_Coding({
 })
 export const roboto = Roboto({
   subsets: ['latin'],
-  weight: ['400'],
+  weight: ['700', '400'],
 })
 export const bungeeInline = Bungee_Inline({
   subsets: ['latin'],
