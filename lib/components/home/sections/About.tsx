@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { ComponentProps, FC } from 'react'
 
 const About: FC<ComponentProps<'section'>> = () => (
-  <section className="mt-[240px] ml-[230px] flex flex-row mb-28 gap-24">
+  <>
     <section className="xl:max-w-[600.22px] xl:max-h-[401px]">
       <h2 className={`${bungeeInline.className} text-secondary text-5xl`}>
         Sobre mi
@@ -32,7 +32,7 @@ const About: FC<ComponentProps<'section'>> = () => (
       width={294}
       height={0}
     />
-  </section>
+  </>
 )
 
 export default About

@@ -1,21 +1,18 @@
 'use client'
 
 import { bungeeInline } from '@lib/fonts'
-import { ComponentProps, FC, useState } from 'react'
+import { ComponentProps, FC, Fragment, useState } from 'react'
 import { experiences } from '@lib/objects'
 
-const Experience: FC<ComponentProps<'section'>> = (props) => {
+const Experience: FC<ComponentProps<typeof Fragment>> = (props) => {
   const [selectedExperience, setSelectedExperience] = useState(experiences[0])
 
   return (
-    <section
-      id="experience"
-      className="xl:max-w-[800px] mt-[240px] ml-[230px] xl:min-h-[500px]"
-    >
+    <>
       <h2 className={`${bungeeInline.className} text-secondary text-5xl`}>
-        Experience
+        Experiencia
       </h2>
-      <section className="mt-16 flex flex-row gap-8">
+      <section className="flex flex-row gap-8">
         <aside className="flex flex-col">
           {experiences.map((experience, index) => (
             <button
@@ -44,7 +41,7 @@ const Experience: FC<ComponentProps<'section'>> = (props) => {
           <div className="border-l-[4px] w-fit absolute border-red-500"></div>
         </aside>
 
-        <article className="p-4">
+        <article className="p-4 xl:max-w-[600px] xl:min-h-[300px]">
           <header>
             <h3 className="text-2xl">{selectedExperience.title}</h3>
             <span className="text-sm">{selectedExperience.date}</span>
@@ -58,7 +55,7 @@ const Experience: FC<ComponentProps<'section'>> = (props) => {
           </ul>
         </article>
       </section>
-    </section>
+    </>
   )
 }
 

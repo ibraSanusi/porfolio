@@ -1,10 +1,12 @@
-import { ComponentProps, FC } from 'react'
+import { ComponentProps, FC, Fragment } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { bungeeInline } from '@lib/fonts'
+import LinkCustom from '../Button'
+import LinkIcon from '@lib/svg/LinkIcon'
 
-const Projects: FC<ComponentProps<'section'>> = () => (
-  <section className="mt-[240px] ml-[230px]">
+const Projects: FC<ComponentProps<typeof Fragment>> = () => (
+  <>
     <h2 className={`${bungeeInline.className} text-secondary text-5xl`}>
       Proyectos
     </h2>
@@ -17,16 +19,16 @@ const Projects: FC<ComponentProps<'section'>> = () => (
           Servicio ofrecido por la startup Recomiend.app. Tras subir tu foto de
           perfil recibes un feedback de la IA para mejorar tu foto.
         </p>
-        <Link
-          className="px-12 py-6 bg-ternary w-fit hover:text-primary shadow-lg hover:scale-105 hover:translate-x-2 hover:-translate-y-2 transition-transform"
+        <LinkCustom
+          className=""
           href={'https://recomiend.app/analizador-foto-perfil-ia'}
-          target="_blank"
         >
-          Mostrar
-        </Link>
+          <LinkIcon className="size-6" />
+          <span>Mostrar</span>
+        </LinkCustom>
       </div>
 
-      <div className="relative xl:w-[583.03px] xl:h-[464.46px] w-full h-full">
+      <div className="relative xl:w-[583.03px] xl:h-[300.46px] w-full h-full">
         <Image
           className="absolute -top-[117px] left-[116px] rounded-2xl -rotate-[15.99deg] z-40"
           src={'/images/recomiend-app-landing-vertical.png'}
@@ -50,7 +52,7 @@ const Projects: FC<ComponentProps<'section'>> = () => (
         />
       </div>
     </section>
-  </section>
+  </>
 )
 
 export default Projects
