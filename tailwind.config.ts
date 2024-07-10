@@ -30,6 +30,14 @@ const config: Config = {
         secondary: '#F2E8CF',
         ternary: '#859c58',
       },
+      keyframes: {
+        pulse: {
+          '50%': { opacity: '.5' },
+        },
+      },
+      animation: {
+        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+      },
     },
   },
   plugins: [],
