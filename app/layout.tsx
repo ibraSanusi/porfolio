@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { roboto } from '@lib/fonts'
+import Header from '@lib/components/home/Header'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -14,7 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${roboto.className} xl:max-w-[1440px] w-full m-auto`}>
+      <body
+        className={`${roboto.className} xl:max-w-[1440px] w-full m-auto py-[190px] flex flex-col items-center`}
+      >
+        <Header />
         {children}
       </body>
     </html>
