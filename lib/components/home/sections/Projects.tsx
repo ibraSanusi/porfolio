@@ -1,8 +1,7 @@
 import { ComponentProps, FC, Fragment } from 'react'
-import Link from 'next/link'
 import Image from 'next/image'
 import { bungeeInline } from '@lib/fonts'
-import LinkCustom from '../Button'
+import LinkCustom from '../LinkCustom'
 import LinkIcon from '@lib/svg/LinkIcon'
 
 const Projects: FC<ComponentProps<typeof Fragment>> = () => (

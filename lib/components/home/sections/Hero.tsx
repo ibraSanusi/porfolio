@@ -2,9 +2,8 @@ import Image from 'next/image'
 import { bungeeInline, bungeeOutline } from '@lib/fonts'
 import Github from '@lib/svg/Github'
 import LinkedIn from '@lib/svg/LinkedIn'
-import Gmail from '@lib/svg/Gmail'
-import LinkCustom from '../Button'
 import Link from 'next/link'
+import CopyClipboard from './hero_coponents/CopyClipboard'
 
 export default function Hero() {
   return (
@@ -35,10 +34,10 @@ export default function Hero() {
             <LinkedIn className="w-[39px] h-[40px] hover:text-secondary hover:scale-105 hover:cursor-pointer transition-transform" />
           </Link>
 
-          <LinkCustom href={''}>
-            <Gmail className="size-[22px]" />
-            <span>Contáctame</span>
-          </LinkCustom>
+          <CopyClipboard
+            buttonValue="ibra.sanusi.ayo@gmail.com"
+            buttonTextContent="Contáctame"
+          />
         </div>
       </div>
 
