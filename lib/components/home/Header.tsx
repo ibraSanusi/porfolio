@@ -1,6 +1,3 @@
-import Github from '@lib/svg/Github'
-import LinkedIn from '@lib/svg/LinkedIn'
-import Image from 'next/image'
 import Link from 'next/link'
 import { ComponentProps, FC } from 'react'
 
@@ -12,7 +9,7 @@ export default function Header() {
         <NavLink href={'#experience'}>Experiencia</NavLink>
         <NavLink href={'#projects'}>Proyectos</NavLink>
         <NavLink href={'#about'}>Sobre mí</NavLink>
-        <NavLink href={'#contact'}>Contacto</NavLink>
+        <NavLink href={'mailto:ibra.sanusi.ayo@gmail.com'}>Contacto</NavLink>
       </nav>
       {/* <div className="flex items-center flex-row gap-4">
         <Link href={'https://github.com/ibraSanusi'} target="_blank">
