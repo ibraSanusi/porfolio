@@ -39,3 +39,12 @@ body {
     text-wrap: balance;
   }
 }
+
+.headerIntersected {
+  background-color: #F2E8CF;
+  color: #386641
+}
+
+.headerBlur {
+  opacity: 1.2;
+}
