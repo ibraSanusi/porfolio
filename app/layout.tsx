@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { Analytics } from '@vercel/analytics/react'
 import './globals.css'
 import { roboto } from '@lib/fonts'
 import Header from '@lib/components/home/Header'
