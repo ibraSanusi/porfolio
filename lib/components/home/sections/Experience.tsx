@@ -25,7 +25,7 @@ const Experience: FC<ComponentProps<typeof Fragment>> = (props) => {
               }`}
             >
               {selectedExperience.name === experience.name && (
-                <div className="z-50 border-l-[4px] rounded-md border-primary h-full w-fit absolute scale-110"></div>
+                <div className="border-l-[4px] rounded-md border-primary h-full w-fit absolute scale-110"></div>
               )}
               <span
                 className={`p-4 w-full hover:bg-ternary hover:text-primary ${
