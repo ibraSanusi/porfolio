@@ -7,10 +7,13 @@ import CopyClipboard from './hero_coponents/CopyClipboard'
 
 export default function Hero() {
   return (
-    <section id="hero" className="flex flex-row gap-20 items-center">
-      <div className="flex flex-col max-w-[600px] gap-6">
+    <section
+      id="hero"
+      className="flex justify-between md:flex-row flex-col gap-20 items-center"
+    >
+      <div className="flex flex-col xl:max-w-[600px] gap-6 order-2 md:order-first">
         <h1
-          className={`text-8xl text-secondary font-bold ${bungeeOutline.className}`}
+          className={`max-md:text-6xl text-8xl text-secondary font-bold ${bungeeOutline.className}`}
         >
           HOLA SOY, <span className={`${bungeeInline.className}`}>IBRA</span>
         </h1>
@@ -43,9 +46,10 @@ export default function Hero() {
 
       <Image
         src={'/images/ibra_timido.jpg'}
-        width={300}
-        height={448}
+        width={150}
+        height={224}
         alt="Imagen de la seccion hero"
+        className="order-1 md:order-last md:w-[300px] md:h-[448px] rounded-lg"
       />
     </section>
   )

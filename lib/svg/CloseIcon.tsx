@@ -1,12 +1,16 @@
 import { ComponentProps, FC } from 'react'
 
-const CloseIcon: FC<ComponentProps<'svg'>> = () => (
+const CloseIcon: FC<ComponentProps<'svg'>> = ({
+  className = 'w-3 h-3',
+  ...props
+}) => (
   <svg
-    className="w-3 h-3"
+    className={`${className}`.trim()}
     aria-hidden="true"
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 14 14"
+    {...props}
   >
     <path
       stroke="currentColor"

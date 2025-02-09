@@ -69,7 +69,7 @@ export default function SectionContainer({
       id={id}
       data-section={id}
       ref={addSectionRef}
-      className={`container scroll-m-[204px] ${className}`}
+      className={`container ${className}`}
       {...props}
     >
       {children}

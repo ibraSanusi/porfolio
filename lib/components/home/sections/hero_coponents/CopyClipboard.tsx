@@ -51,7 +51,7 @@ export default function CopyClipboard({
         <div
           id="toast-default"
           className={clsx(
-            'items-center w-full max-w-xs p-4 text-gray-500 rounded-lg shadow dark:text-gray-400 bg-white fixed right-12 top-12 container scroll-m-[204px]',
+            'items-center w-full max-w-xs p-4 text-gray-500 rounded-lg shadow dark:text-gray-400 bg-white fixed right-12 top-12 container',
             {
               'flex .': showToast,
               'hidden .': !showToast,

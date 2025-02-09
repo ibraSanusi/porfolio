@@ -14,14 +14,17 @@ export default function Home() {
           </SectionContainer>
           <SectionContainer
             id="experience"
-            className="flex flex-col gap-20 container scroll-m-[204px]"
+            className="flex flex-col gap-20 container"
           >
             <Experience />
           </SectionContainer>
           <SectionContainer id="projects">
             <Projects />
           </SectionContainer>
-          <SectionContainer id="about" className="flex flex-row mb-28 gap-24">
+          <SectionContainer
+            id="about"
+            className="flex xl:flex-row flex-col mb-28 gap-24"
+          >
             <About />
           </SectionContainer>
         </div>

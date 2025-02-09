@@ -26,7 +26,7 @@ const About: FC<ComponentProps<'section'>> = () => (
       </p>
     </section>
     <Image
-      className=""
+      className="m-auto xl:m-0 rounded-xl"
       src={'/images/ibra_vouge.jpg'}
       alt="Imagen del landing de recomiend.app"
       width={294}

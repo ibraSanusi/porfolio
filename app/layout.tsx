@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Analytics } from '@vercel/analytics/react'
 import './globals.css'
 import { roboto } from '@lib/fonts'
@@ -11,6 +11,11 @@ export const metadata: Metadata = {
     'Porfolio generado por ibraSanusi con la intención de demostrar sus conocimientos.',
 }
 
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1.0,
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -19,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${roboto.className} xl:max-w-[1440px] w-full m-auto py-[190px] flex flex-col items-center`}
+        className={`${roboto.className} relative w-full max-w-screen overflow-x-hidden px-8 m-auto py-[190px] flex flex-col items-center`}
       >
         <HeaderProvider>
           <Header />
