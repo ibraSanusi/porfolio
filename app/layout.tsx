@@ -29,6 +29,7 @@ export default function RootLayout({
         <HeaderProvider>
           <Header />
           {children}
+          <Analytics />
         </HeaderProvider>
       </body>
     </html>
