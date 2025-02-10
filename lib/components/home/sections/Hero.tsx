@@ -19,9 +19,14 @@ export default function Hero() {
         </h1>
 
         <p className="w-full text-pretty">
-          Desarrollador frontend 😉. Capaz de resolver problemas y con ganas de
-          aprender lo que no se todavía. Nextjs, Reactjs, tRPC, Tailwind y
-          Prisma son mis últimas tecnologías utilizadas.
+          Desarrollador con +2 años de experiencia en la creación de
+          aplicaciones web escalables y de alto rendimiento, trabajando tanto en
+          frontend como en backend. Experto en React.js, Next.js y TypeScript,
+          con experiencia en el desarrollo de API RESTful utilizando Node.js,
+          Express y bases de datos SQL/NoSQL. Familiarizado con herramientas
+          como Docker, Prisma ORM y NextAuth, así como con el despliegue en
+          Vercel. Apasionado por las buenas prácticas de desarrollo, los
+          principios SOLID y el testing. 🚀
         </p>
 
         <div className="flex flex-row gap-4">
