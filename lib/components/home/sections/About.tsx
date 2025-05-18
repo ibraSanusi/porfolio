@@ -14,15 +14,16 @@ const About: FC<ComponentProps<'section'>> = () => (
         Desarrollador front end
       </h3>
       <p className="mt-6">
-        ¡Hola! Soy Ibra, desarrollador frontend con un fuerte interés en el
-        backend. Actualmente, estoy trabajando con Next.js y React.js para dar
-        vida a mis proyectos, y cuando exploro el backend, utilizo tecnologías
-        como NextAuth, Prisma ORM y Vercel para la autenticación, gestión de
-        datos y despliegue. Actualmente, estoy en búsqueda de nuevas
-        oportunidades profesionales y sigo ampliando mis conocimientos mediante
-        proyectos personales donde aplico buenas prácticas, principios SOLID y
-        testing. Me apasiona construir soluciones eficientes y escalables, y
-        siempre estoy aprendiendo para mejorar como desarrollador.
+        ¡Hola! Soy Ibra, desarrollador frontend con experiencia en React.js y
+        Next.js. Me apasiona crear interfaces modernas, funcionales y
+        accesibles, cuidando tanto la experiencia del usuario como la calidad
+        del código. Aunque mi enfoque principal es el frontend, también tengo
+        interés en el backend y he explorado herramientas como Prisma ORM,
+        NextAuth y el despliegue con Vercel para complementar mis proyectos.
+        Actualmente estoy buscando nuevas oportunidades profesionales donde
+        pueda seguir creciendo como desarrollador. En mis proyectos personales
+        practico buenas prácticas, diseño limpio, testing y componentes
+        reutilizables para mejorar continuamente mis habilidades.
       </p>
     </section>
     <Image
